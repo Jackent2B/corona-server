@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>
+		CoronaVirus(Covid-19) Dashboard
+	</title>
+	<link rel="icon" href="webLogo.png" type="image/icon type">
+
+	<!-- chart.js cdn -->
+	<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/chart.js@2.9.3/dist/Chart.min.js"></script>
+
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+	<link rel="stylesheet" type="text/css" href="stylesheets/style.css">
+</head>
+<body>
+
+	<div class="parent">
+	<div id="c1"><canvas id="chart1" class="canvas-container1"></canvas></div>
+	<div id="c2"><canvas id="chart2" class="canvas-container2"></canvas></div>
+	<div id="c3"><canvas id="chart3" class="canvas-container3"></canvas></div>
+	<div id="c4"><canvas id="chart4" class="canvas-container4"></canvas></div>
+		
+		<nav class="navbar" style="background:  #1e1e2f;">
+  		<!-- <h4 align="center" style="padding:5px;color: #fff">CoronaVirus(Covid-19) Dashboard</h4> -->
+  		<form class="form-inline" id="search-country">
+		    <input class="form-control mr-sm-2" type="search" placeholder="Search any country" aria-label="Search">
+		    <!-- <button class="btn btn-outline-primary my-2 my-sm-0" type="submit">Search</button> -->
+		  </form>
+  		<a class="navbar-brand mx-auto" style="color: #fff"><h4>CoronaVirus(Covid-19) Dashboard</h4></a>
+		  
+        </nav>
+		<!-- <div style="background:  #1d1d2f;">
+		<h1 align="center" style="padding:10px;color: #fff" c>CoronaVirus(Covid-19) Dashboard</h1>
+		</div> -->
+		<div id="info" class="container">
+		<h6 style="color: #fff;padding-top: 5px;">*Scroll down on the table</h6>
+		</div>
+			
+			
+		
+	<div id="table-wrapper">	
+	<div id="table-scroll" align="left">
+		<table class="table table-hover table-dark" id="myTable">
+			<thead style="color:rgb(0, 153, 255)">
+				<tr>
+					<th>Place</th>
+					<th>Total Cases</th>
+					<th>Today Cases </th>
+					<th>Total Deaths</th>
+					<th>Today Deaths</th>
+					<th>Recovered</th>
+					<th>Active</th>
+					<th>Critical</th>
+					<th>Cases Per Million</th>
+					<th>Mortality Rate</th>
+				</tr>
+			</thead>
+		<tbody id="data">
+
+			
+		</tbody>
+
+	</table>
+
+	</div>
+</div>	
+<!-- 	<h2 style="color: #fff;padding-top: 25px;" align="center">Total Death Info Using Pie Chart:
+	</h2> -->
+	</div>
+	<div class="pie">	
+			<h2 style="color: rgb(0, 153, 255);padding: 60px;" align="center">TOTAL DEATHS</h2>
+			<h4 style="color: white;padding-bottom: 10px;" align="center">Most No. of deaths:<span id="mostDeaths" style="color: orange"></span></h4>
+			<h4 style="color: white;padding-bottom: 10px;" align="center">Country:<span id="mostDeathsCntry" style="color: orange;"></span></h4>
+			<h6 style="color: white;padding: 65px;" align="center">
+				<i>"Tough times never last, but tough people do."</i>
+			</h6>
+	</div>
+	<div class="bar">
+			<h2 style="color: rgb(0, 153, 255);padding: 60px;" align="center">TODAY'S CASES</h2>
+			<h4 style="color: white;padding-bottom: 10px;" align="center">Most No. of Today's Cases:<span id="mosTdyCase" style="color: orange" ></span></h4>
+			<h4 style="color: white;padding-bottom: 10px;" align="center">Country:<span id="mosTdyCaseCntry" style="color: orange"></span></h4>
+			<h6 style="color: white;padding: 59px;" align="center">
+				<i>"You never know how strong you are until being strong is the only choice you have."</i>
+			</h6>
+	</div>
+		
+
+	<div class="fooooot">
+      <!-- Site footer -->
+    <footer class="site-footer" id="foot">
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-12 col-md-6">
+            <h6>About</h6>
+            <p class="text-justify">A coronaVirus (COVID-19) dashboard to keep you updated about the stats across the globe in both graphical as well as Tabular format.</p>
+          </div>
+
+          <div class="col-xs-6 col-md-3">
+            
+          </div>
+
+          <div class="col-xs-6 col-md-3">
+            <h6>Quick Links</h6>
+            <ul class="footer-links">
+              
+              <li>Contact Us @ jayant.khandelwal7@gmail.com</li>
+              <!-- <li><a href="http://scanfcode.com/contribute-at-scanfcode/">Contribute</a></li> -->
+            </ul>
+          </div>
+        </div>
+        <hr>
+      </div>
+      <div class="container">
+        <div class="row">
+          <div class="col-md-8 col-sm-6 col-xs-12">
+            <p class="copyright-text">Developed and Maintained by
+         <a href="https://www.linkedin.com/in/jayant-khandelwal-2879aa157/" target="_blank"  style="color: white">Jayant Khandelwal</a>.
+            </p>
+          </div>
+        </div>
+      	</div>
+		</footer>
+	  </div>	
+    </div>
+
+	
+
+	<script type="text/javascript" src="javascripts/index.js">
+
+	</script>
+</body>
+</html>
